@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  min-height: 100vh;
+}
+
+main aside h1 {
+  color: #fff;
+  margin: 0 0 0.5em;
+}
+
+main aside p {
+  color: #fff;
+  margin: 0;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .promotion {
+  background: #6055a5;
+  margin-bottom: 1.5rem;
+  padding: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 6px 1px 0px #4a494963;
+}
+
+main section .promotion h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #b9b6d3;
+  margin: 0;
+}
+
+main section .promotion span {
+  font-weight: 700;
+  color: #fff;
+}
+
+main section .form-wrapper {
+  display: block;
+  text-align: center;
+  background: #ffff;
+  border-radius: 5px;
+  box-shadow: 0 6px 1px 0px #4a494963;
+  max-width: 100%;
+}
+
+main section .form-wrapper form {
+  text-align: start;
+}
+
+main section .form-wrapper form label {
+  display: inline-block;
+  margin-bottom: 0.4em;
+}
+
+main section .form-wrapper form .form-child {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+main section .form-wrapper form .form-child input {
+  display: block;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.8em;
+}
+
+main section .form-wrapper form .form-child input::placeholder {
+  margin-right: 2em;
+  font-weight: 500;
+}
+
+main section .form-wrapper form .form-child .statusError {
+  border: 1px solid #ff7a7a;
+}
+
+main section .form-wrapper form .form-child .errorMessage {
+  font-size: 0.7rem;
+  color: #ff7a7a;
+  text-align: end;
+  margin: 0.3em 0;
+}
+
+main section .form-wrapper form .form-child img {
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+main section .form-wrapper form .form-child input.statusError + img {
+  opacity: 1;
+}
+
+main section .form-wrapper form button {
+  display: block;
+  width: 100%;
+  background: #38cc8c;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #38cc8c;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px 0px #32b77e;
+  padding: 0.8rem;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+main section .form-wrapper form button:hover {
+  opacity: 75%;
+}
+
+main section .form-wrapper form .form-terms {
+  position: relative;
+}
+
+main section .form-wrapper form .form-terms p {
+  text-align: center;
+  font-size: 0.5rem;
+  color: #b9b6d3;
+  margin: 0;
+}
+
+main section .form-wrapper form .form-terms span {
+  color: #ff7a7a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  body {
+    background: url(../IMG/bg-intro-mobile.png), #ff7a7a;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main aside {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+  }
+  main aside h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  main aside p {
+    font-size: 0.9rem;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+  main section {
+    margin: 2em 0;
+    width: 100%;
+    max-width: 23em;
+  }
+  main section .promotion {
+    width: 100%;
+  }
+  main section .form-wrapper {
+    width: 100%;
+  }
+  main section .form-wrapper form {
+    padding: 1.56em;
+  }
+  main section .form-wrapper form input {
+    padding: 0.8em 0;
+  }
+}
+
+@media (min-width: 640px) {
+  main section .promotion {
+    /* width: 23em; */
+  }
+  main section .form-wrapper {
+    /* width: 23em; */
+  }
+  main section .form-wrapper form {
+    padding: 2em 2.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url(../IMG/bg-intro-desktop.png), #ff7a7a;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  main aside {
+    max-width: 100%;
+    width: 37%;
+    margin-top: 0;
+    margin-right: 4.68em;
+  }
+  main aside h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 0.5em;
+    line-height: 1.2;
+  }
+  main aside p {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+  }
+  main section .form-wrapper form {
+    padding: 2em 2.5em;
+  }
+}
